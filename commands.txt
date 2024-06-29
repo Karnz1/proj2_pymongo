@@ -1,0 +1,2 @@
+ docker run -d -p 8500:27017 --network=wog_mynetwork -ip 172.18.0.3 --name mongo -v flask_app_db:/data/db flask_app_mongo
+ docker run -d -p 4444:8006 --network=wog_mynetwork --name front flask_app_web:1.8
